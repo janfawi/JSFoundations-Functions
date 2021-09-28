@@ -18,7 +18,8 @@ function greet(name) {
  */
 function isOdd(n) {
   // if ( n%2 ) return true; else return false;
-  return ((n%2) ? true : false);  // Your code here
+  return (n%2 === 1)
+  // return ((n%2) ? true : false);  // Your code here
 }
 
 /**
