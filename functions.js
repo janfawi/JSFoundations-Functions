@@ -7,6 +7,7 @@
  * greet("Michael") logs "Hello Michael"
  */
 function greet(name) {
+  console.log(`Hello ${name}`);
   // Your code here
 }
 
@@ -16,7 +17,8 @@ function greet(name) {
  * - returns true if it's odd, false otherwise
  */
 function isOdd(n) {
-  // Your code here
+  // if ( n%2 ) return true; else return false;
+  return ((n%2) ? true : false);  // Your code here
 }
 
 /**
@@ -31,7 +33,8 @@ function isOdd(n) {
  * Hint: you can solve this without writing any loops!
  */
 function oddsSmallerThan(n) {
-  // Your code here
+if (n%2) return ((n-1) / 2);
+else return n/2
 }
 
 /**
@@ -45,7 +48,9 @@ function oddsSmallerThan(n) {
  * squareOrDouble(9) -> 81
  */
 function squareOrDouble(n) {
-  // Your code here
+  if (n%2) return (n*n);
+else return (n*2)
+
 }
 
 export { greet, isOdd, oddsSmallerThan, squareOrDouble };
